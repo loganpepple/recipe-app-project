@@ -10,7 +10,8 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1"
+    "@testing-library/user-event": "^7.2.1",
+    "gh-pages": "^6.1.0"
   },
   "scripts": {
     "build": "react-scripts build",
@@ -22,7 +23,9 @@
     "start": "react-scripts start",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "react-scripts test",
-    "test:solution": "npm run docker:build && npm run docker:test"
+    "test:solution": "npm run docker:build && npm run docker:test",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
