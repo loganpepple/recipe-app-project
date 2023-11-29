@@ -34,7 +34,7 @@ function RecipeList({ recipes, setRecipes }) {
               <td>{recipe.ingredients}</td>
               <td>{recipe.preparation}</td>
               <td>
-                <button type="button" onClick={deleteRecipe} id={index}>Delete</button>
+                <button type="button" onClick={deleteRecipe} id={index} name="delete">Delete</button>
               </td>
             </tr>
           )
